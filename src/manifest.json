@@ -1,0 +1,15 @@
+{
+    "name": "Google Search Earning Rakuten Points",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Save your time",
+    "permissions": ["activeTab", "tabs", "storage"],
+    "content_scripts": [{
+      "matches": ["https://websearch.rakuten.co.jp/Web*", "https://www.google.com/search*"],
+      "js": [
+        "main.user.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }]
+  }
